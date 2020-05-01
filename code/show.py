@@ -12,7 +12,7 @@ def read():
 print(read())
 
 x = [list(read().keys()), list(read().values())]
-print(x)
+# print(x)
 plt.bar(x[0], x[1])
 plt.xlabel("MENSCHEN")
 plt.ylabel("KNIEBEUGEN")

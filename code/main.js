@@ -20,68 +20,36 @@ app.whenReady().then(createWindow)
 
 //////////////////////////////////////
 
-function add_papa() {
+function add_person(person) {
     var data = fs.readFileSync("scores.json");
     var scores = JSON.parse(data);
 
-    scores["papa"] = scores["papa"] + 1;
+    scores[person] = scores[person] + 1;
 
     var data = JSON.stringify(scores, null, 4);
     fs.writeFile("scores.json", data, finished);
 
     function finished(err) {}
+}
+
+function add_papa() {
+    add_person("papa");
 }
 
 function add_mama() {
-    var data = fs.readFileSync("scores.json");
-    var scores = JSON.parse(data);
-
-    scores["mama"] = scores["mama"] + 1;
-
-    var data = JSON.stringify(scores, null, 4);
-    fs.writeFile("scores.json", data, finished);
-
-    function finished(err) {}
+    add_person("mama");
 }
 
 function add_liana() {
-    var data = fs.readFileSync("scores.json");
-    var scores = JSON.parse(data);
-
-    scores["liana"] = scores["liana"] + 1;
-
-    var data = JSON.stringify(scores, null, 4);
-    fs.writeFile("scores.json", data, finished);
-
-    function finished(err) {}
+    add_person("liana");
 }
 
 function add_jannis() {
-    var data = fs.readFileSync("scores.json");
-    var scores = JSON.parse(data);
-
-    scores["jannis"] = scores["jannis"] + 1;
-
-    var data = JSON.stringify(scores, null, 4);
-    fs.writeFile("scores.json", data, finished);
-
-    function finished(err) {}
+    add_person("jannis");
 }
 
 function add_marisa() {
-    var data = fs.readFileSync("scores.json");
-    var scores = JSON.parse(data);
-
-    scores["marisa"] = scores["marisa"] + 1;
-
-    var data = JSON.stringify(scores, null, 4);
-    fs.writeFile("scores.json", data, finished);
-
-    function finished(err) {}
-}
-
-function test() {
-    alert("test");
+    add_person("marisa");
 }
 
 function show() {
