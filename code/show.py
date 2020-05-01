@@ -15,6 +15,6 @@ x = [list(read().keys()), list(read().values())]
 print(x)
 plt.bar(x[0], x[1])
 plt.xlabel("MENSCHEN")
-plt.ylabel("LIEGESTUETZE")
+plt.ylabel("KNIEBEUGEN")
 
 plt.show()

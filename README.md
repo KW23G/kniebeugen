@@ -1,4 +1,4 @@
-# Liegestützen-Zähler:
+# Kniebeugen-Zähler:
 
 I created this for my dad's birthday in only one day
 
