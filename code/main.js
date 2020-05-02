@@ -55,3 +55,19 @@ function add_marisa() {
 function show() {
     exec("python3 show.py");
 }
+
+
+function reset() {
+    var data = fs.readFileSync("scores.json");
+    var scores = JSON.parse(data);
+
+    var persons = ["papa", "mama", "liana", "jannis", "marisa"];
+    for (index = 0; index < 5; index++) {
+        scores[persons[index]] = 0;
+    }
+
+    var data = JSON.stringify(scores, null, 4);
+    fs.writeFile("scores.json", data, finished);
+
+    function finished(err) {}
+}

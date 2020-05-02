@@ -27,3 +27,15 @@ body {
     height: 80px;
     border-radius: 30px
 }
+
+.res {
+    background-color: rgb(140, 0, 140);
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: black;
+    width: 140px;
+    height: 80px;
+    border-radius: 30px
+}
